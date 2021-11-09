@@ -1,0 +1,349 @@
+.mainContainer {
+  padding: 40px 50px 20px 50px;
+  color: #16395b;
+}
+
+.MuiTab_root {
+  min-width: 72px !important;
+  font-size: 10px !important;
+  font-weight: bolder !important;
+  text-transform: none !important;
+}
+
+.MuiTab_landing_root {
+  min-width: 280px !important;
+  font-size: 20px !important;
+  font-weight: lighter !important;
+  text-transform: none !important;
+  //color: #7d8793;
+}
+
+.MuiTab_landing_request_root {
+  min-width: 72px !important;
+  font-size: 15px !important;
+  font-weight: bolder !important;
+  text-transform: none !important;
+  color: #7d8793;
+}
+
+.tabs {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #F3F4F5;
+  overflow: visible !important;
+
+  > div {
+    overflow: visible !important;
+
+    > span {
+      bottom: -2px !important;
+    }
+  }
+}
+
+.purchase_tabs {
+  background-color: white;
+  border-bottom: 2px solid lightgray;
+  overflow: visible !important;
+
+  > div {
+    overflow: visible !important;
+
+    > span {
+      bottom: -2px !important;
+    }
+  }
+}
+
+.demo_tabs {
+  margin-bottom: 15px;
+}
+
+.catBtn {
+  text-transform: none;
+  height: 23px;
+  border: none;
+  font-size: 11px;
+  box-shadow: 0 3px 3px #00000007;
+}
+
+.sort-select {
+  position: relative;
+
+  &:before {
+    display: inline-block;
+    content: '';
+    background-image: url('/images/np_arrow.svg');
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal-flex {
+  display: flex;
+  align-items: center;
+}
+
+.fit-width {
+  width: fit-content;
+}
+
+.react-calendar {
+  width: 480px !important;
+  border: none !important;
+}
+
+.linkBtn {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.linkImg {
+  margin-left: 3px
+}
+
+/*Now the CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+.tree li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after,
+.tree li:only-child::before {
+  display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child {
+  padding-top: 0;
+}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: 0 none;
+}
+
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before {
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+
+.tree li a {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #666;
+  font-family: arial, verdana, tahoma;
+  font-size: 11px;
+  display: inline-block;
+  padding: 18px 130px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover,
+.tree li a:hover + ul li a {
+  background: #c8e4f8;
+  color: #000;
+  border: 1px solid #94a0b4;
+}
+
+/*Connector styles on hover*/
+.tree li a:hover + ul li::after,
+.tree li a:hover + ul li::before,
+.tree li a:hover + ul::before,
+.tree li a:hover + ul ul::before {
+  border-color: #94a0b4;
+}
+
+.binary-parent {
+  padding: 18px;
+  background: #cccccc14;
+  font-weight: 600;
+}
+
+.binary-child {
+  padding: 18px 130px;
+  /* background: #cccccc14; */
+  font-weight: 600;
+}
+
+/* slider scss */
+.slide-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-card-image {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #dce0e3;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 1;
+}
+
+.silde-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  color: #16395b;
+  font-weight: 500;
+  background-color: #dce0e3;
+}
+
+.btn-delete {
+  cursor: pointer;
+}
+
+.slides-heading {
+  color: #16395b;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.mt-mb {
+  margin-bottom: 20px;
+}
+
+.ace_print-margin {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.match-quiz-circle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  background-color: transparent;
+}
+
+.course-carousel-container {
+  position: unset !important;
+
+  button {
+    bottom: 0;
+    min-width: 38px;
+    min-height: 38px;
+    background: white;
+    box-shadow: 0px 4px 8px #00000037;
+
+    &:before {
+      color: var(--base-primary);
+      font-weight: bold;
+    }
+
+    &.react-multiple-carousel__arrow--left {
+      left: 0;
+    }
+
+    &.react-multiple-carousel__arrow--right {
+      right: 0;
+    }
+  }
+}
+
+.box-wrapper {
+  border: 1px solid var(--base-gray-300);
+  box-shadow: 0px 3px 3px #00000008 !important;
+  border-radius: 5px !important;
+}
+
+.Mui-expanded[class*='MuiAccordionSummary-expandIcon'] {
+  transform: rotate(90deg) !important;
+}
+
+.box-wrapper:before {
+  display: none;
+}

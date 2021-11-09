@@ -1,0 +1,59 @@
+@import 'app.scss';
+.drawerHeader {
+  background-color: $bg-color-black !important;
+}
+.drawerPaper {
+  background-color: $bg-color-dark !important;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.rightContainer {
+  display: flex;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background: url('/images/logo.svg');
+  width: 88.8px;
+  height: 28.08px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+}
+.chevron {
+  color: white;
+}
+
+.input {
+  width: 290px;
+  height: 33px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid $base-gray-200;
+  border-radius: 5px;
+  padding: 0 40px;
+  font-size: 12px;
+}
+
+.listItemActive:not(.hasChildren)::before {
+  content: '';
+  left: 0;
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  background-color: $base-primary;
+}
+.listItemActive svg,
+.listItemActive svg .prefix__a {
+  fill: $base-primary !important;
+}
+
+.activeSubMenu {
+  font: normal normal 800 14px/17px $base-font !important;
+}

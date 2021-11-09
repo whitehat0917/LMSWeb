@@ -1,0 +1,57 @@
+@import 'app.scss';
+
+.content {
+  width: 100%;
+}
+.userPanel {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userButtonText {
+  width: 100px;
+  text-align: start;
+  font: normal normal 600 10px/12px $base-font;
+}
+
+.MuiTab_root {
+  min-width: 72px !important;
+
+  text-transform: capitalize !important;
+  font: normal normal 600 10px/12px $base-font !important;
+  padding: 0 10px !important;
+}
+.MuiTab_root > span {
+  height: 4px;
+}
+
+.userTypeTabs {
+  background-color: white !important;
+  border-bottom: 2px solid $base-gray-200;
+  color: black !important;
+  flex-direction: row !important;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.item {
+  justify-content: center;
+  display: flex;
+  margin-top: 99px !important;
+}
+.item1 {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px !important;
+}
+
+.para {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #16395b;
+  opacity: 1;
+}

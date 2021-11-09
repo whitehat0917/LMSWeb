@@ -1,0 +1,29 @@
+@import '../../../styles/app.scss';
+
+.bigBar {
+  color: $big-bar-color;
+}
+.smallBar {
+  color: $small-bar-color;
+}
+.react-resizable {
+  max-width: 100%;
+}
+
+.react-resizable-handle {
+  bottom: -10px;
+  right: -10px;
+}
+.scrollable {
+  font: normal normal 600 10px/12px $base-font-medium;
+  color: $base-gray-500;
+  padding: 6px 12px;
+  padding-left: 30px;
+  cursor: pointer;
+  list-style: none;
+  @media screen and (max-width: '800px') {
+    padding-bottom: 5px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+}

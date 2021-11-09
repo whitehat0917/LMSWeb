@@ -1,0 +1,117 @@
+@import 'app.scss';
+
+.root {
+  width: 100%;
+  padding: 20px;
+}
+.filterEvent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eventHeader {
+  font: normal normal bold 13px/16px $base-font;
+  letter-spacing: 0px;
+  color: $color-primary-dark;
+}
+.todayEvents {
+  position: relative;
+  padding: 10px;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  .eventTitle {
+    font: normal normal bold 10px/15px $base-font;
+    color: $base-gray-500;
+  }
+  .eventTiming {
+    font: normal normal normal 10px/15px $base-font;
+    color: $base-gray-500;
+  }
+}
+.todayEvents::before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  background-color: #29ac79;
+}
+
+.singleEvent {
+  display: flex;
+  justify-content: space-between;
+
+  .eventName {
+    font: normal normal 600 14px/17px $base-font;
+    color: $color-primary-dark;
+    text-align: left;
+    @media (max-width: '600px') {
+      white-space: break-spaces;
+    }
+  }
+  .eventDate {
+    margin-right: 15px;
+    font: normal normal 600 10px/12px $base-font;
+    color: $color-primary-dark;
+    text-align: center;
+    @media (max-width: '600px') {
+      margin-right: 10px;
+    }
+  }
+  .eventTime {
+    font: normal normal normal 10px/15px $base-font;
+    letter-spacing: 0px;
+    color: $base-gray-500;
+    text-align: center;
+    @media (max-width: '600px') {
+      white-space: break-spaces;
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 15px 25px;
+  border: 1px solid $base-gray-300;
+  background: $base-gray-100 0% 0% no-repeat padding-box;
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  .inviteNewEventText {
+    font: normal normal 600 10px/12px $base-font;
+    color: $color-primary-dark;
+    align-self: center;
+  }
+}
+
+.modalContent {
+  padding: 20px;
+}
+.close {
+  cursor: pointer;
+}
+.userPanel {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 100%;
+}
+
+.searchUser {
+  width: 100%;
+  background: $base-gray-200 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 5px;
+  font: normal normal 600 10px/12px $base-font;
+  color: $base-gray-500;
+  padding: 14px 20px;
+  padding-left: 50px;
+  outline: none;
+}

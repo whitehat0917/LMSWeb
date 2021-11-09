@@ -1,0 +1,60 @@
+@import 'app.scss';
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #ffffff;
+
+  &__tab-list {
+    margin: 0 0 20px;
+    padding: 0 0 0 30px;
+    font: normal normal 600 10px/12px $base-font-medium;
+    letter-spacing: 0px;
+    color: $base-gray-500;
+  }
+
+  &__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    margin-right: 37px;
+    cursor: pointer;
+
+    &--selected {
+      border-bottom: 2px solid $base-primary;
+      color: #16395b;
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px hsl(208, 99%, 50%);
+      border-color: hsl(208, 99%, 50%);
+      outline: none;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+    padding-left: 30px;
+
+    &--selected {
+      display: block;
+    }
+  }
+}

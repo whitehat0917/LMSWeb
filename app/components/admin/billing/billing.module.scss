@@ -1,0 +1,45 @@
+@import 'app.scss';
+
+.userTypeTabs {
+  background-color: white;
+  border-bottom: 2px solid $base-gray-200;
+}
+
+.welcomeMsg {
+  padding: 30px 40px;
+  background: $base-gray-200 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  .freeTrialText {
+    font: normal normal 600 15px/19px $base-font;
+    letter-spacing: 0px;
+    color: $color-primary-dark;
+    .message {
+      margin-top: 10px;
+      font: normal normal normal 13px/16px $base-font;
+      letter-spacing: 0px;
+      color: $color-primary-dark;
+    }
+  }
+}
+.upgradeAccount {
+  .upgradeAccText {
+    font: normal normal 600 12px/15px $base-font;
+    letter-spacing: 0px;
+    color: $color-primary-dark;
+    margin-bottom: 10px;
+  }
+  .message {
+    margin-top: 10px;
+    font: normal normal normal 10px/15px $base-font;
+    letter-spacing: 0px;
+    color: $base-gray-500;
+  }
+}
+.planSwitch {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font: normal normal medium 10px/15px $base-font;
+  letter-spacing: 0px;
+  color: $base-gray-500;
+}

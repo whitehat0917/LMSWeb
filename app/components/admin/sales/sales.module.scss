@@ -1,0 +1,65 @@
+@import 'app.scss';
+@import 'common.module.scss';
+
+.content {
+  width: 100%;
+}
+.userPanel {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchUser {
+  width: 100%;
+  background: $base-gray-200 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 5px;
+  font: normal normal 600 10px/12px $base-font;
+  color: $base-gray-500;
+  padding: 14px 20px;
+  padding-left: 50px;
+  outline: none;
+}
+
+.userButton {
+  border: 1px solid $base-gray-300;
+  background: $base-gray-100 0% 0% no-repeat padding-box;
+  padding: 5px 20px;
+  border-radius: 4px;
+  text-transform: none !important;
+  justify-content: space-between;
+}
+.userButtonText {
+  width: 100px;
+  text-align: start;
+  font: normal normal 600 10px/12px $base-font;
+}
+//Modal CSS
+.header {
+  padding: 15px 25px;
+  border: 1px solid $base-gray-300;
+  background: $base-gray-100 0% 0% no-repeat padding-box;
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editCategoryText {
+  font: normal normal 600 10px/12px $base-font;
+  color: $color-primary-dark;
+  align-self: center;
+}
+
+.modalContent {
+  padding: 20px 25px;
+}
+.close {
+  cursor: pointer;
+}
+.inviteLink {
+  width: 100%;
+  padding: 30px 25px;
+}

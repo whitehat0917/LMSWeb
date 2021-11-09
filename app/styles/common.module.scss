@@ -1,0 +1,175 @@
+@import 'app.scss';
+.test {
+  height: 118px;
+  border: none;
+  background-color: teal;
+}
+
+.test1 {
+  background-color: blue;
+  height: 100%;
+}
+.test2 {
+  background-color: red;
+  height: 100%;
+}
+
+.accountContainer {
+  display: flex;
+  align-items: center;
+}
+
+.accountManager {
+  width: 60%;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.avatarContainer {
+  width: 118px;
+  height: 118px;
+  display: block;
+  margin: auto;
+}
+
+.avatar {
+  width: 100%;
+  align-self: center;
+}
+
+.accountText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.greeting {
+  text-align: left;
+  font: normal normal medium 17px/20px $base-font;
+  letter-spacing: 0px;
+  color: $base-secondary;
+  opacity: 1;
+}
+
+.message {
+  padding-right: 40px;
+  text-align: left;
+  font: normal normal normal 13px/16px $base-font;
+  text-align: justify;
+  letter-spacing: 0px;
+  color: $base-secondary;
+  opacity: 1;
+  @media (max-width: 600px) {
+    padding-right: 0;
+  }
+}
+
+.appointment {
+  width: 190px;
+  height: 36px;
+  background: $color-primary-dark 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000007;
+  border-radius: 4px;
+  font: normal normal 600 13px/16px $base-font;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.ignoreOption {
+  font: normal normal 600 10px/12px $base-font;
+  letter-spacing: 0px;
+  color: $base-gray-500;
+  border: none;
+  opacity: 1;
+  width: fit-content;
+  align-self: center;
+}
+
+.quickStats {
+  height: 134px;
+  padding: 20px;
+}
+.statsHeading {
+  text-align: left;
+  font: normal normal 600 14px/17px $base-font;
+  color: $base-secondary;
+  opacity: 1;
+  align-self: center;
+}
+
+.statsContainer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.statsDetail {
+  width: 60%;
+  padding: 20px;
+}
+
+.statsTitle {
+  margin: 0;
+  text-align: left;
+  font: normal normal normal 13px/16px $base-font;
+  color: $base-secondary;
+  opacity: 1;
+}
+
+.statsValue {
+  padding-top: 10px;
+  text-align: left;
+  font: normal normal 600 40px/49px $base-font;
+  letter-spacing: -2px;
+  color: $base-secondary;
+  opacity: 1;
+}
+
+.statsIcon {
+  padding-top: 25px;
+  width: 48px;
+  height: 57px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 134px;
+  width: 134px;
+}
+.linkTitle {
+  text-align: center;
+  font: normal normal normal 13px/16px $base-font;
+  color: $base-secondary;
+}
+.statsHeader {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterContainer {
+  position: relative;
+  appearance: none;
+}
+
+.dropShadow {
+  box-shadow: 0px 3px 6px #00000005;
+  border-radius: 5px;
+}
+
+.bigBar {
+  color: $big-bar-color;
+}
+.smallBar {
+  color: $small-bar-color;
+}

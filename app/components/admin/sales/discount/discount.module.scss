@@ -1,0 +1,35 @@
+@import 'app.scss';
+
+.searchFilter {
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchDiscount {
+  width: 100%;
+  background: $base-gray-200 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 5px;
+  font: normal normal 600 10px/12px $base-font;
+  color: $base-gray-500;
+  padding: 14px 20px;
+  padding-left: 50px;
+  outline: none;
+}
+
+.userButton {
+  border: 1px solid $base-gray-300 !important;
+  background: $base-gray-100 0% 0% no-repeat padding-box !important;
+  padding: 12px 20px !important;
+  border-radius: 4px !important;
+  text-transform: none !important;
+  justify-content: space-between !important;
+}
+.userButtonText {
+  width: 110px;
+  text-align: start;
+  font: normal normal 600 10px/12px $base-font;
+}

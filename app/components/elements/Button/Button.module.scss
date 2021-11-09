@@ -1,0 +1,13 @@
+@import 'app.scss';
+
+.button {
+  width: 169px;
+  height: 36px;
+  background: $base-primary 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000007;
+  border-radius: 4px;
+  font: normal normal 600 13px/16px $base-font;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}

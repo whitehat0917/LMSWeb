@@ -1,0 +1,26 @@
+@import 'app.scss';
+
+.content {
+  grid-column: span 12;
+  text-align: center;
+
+  @include breakpoint('md') {
+    grid-column: 3 / 11;
+  }
+
+  @include breakpoint('xl') {
+    grid-column: 4 / 10;
+  }
+}
+
+.buttonGp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+
+  Button {
+    width: 260px;
+    margin: 12px;
+    //background-color: $base-accent;
+  }
+}

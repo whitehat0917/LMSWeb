@@ -1,0 +1,108 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --base-gray-500: #7d8793;
+  --base-gray-400: #bec4cb;
+  --base-gray-300: #dce0e3;
+  --base-gray-200: #f3f4f5;
+  --base-gray-100: #f7f8fb;
+  --base-primary: #006dff;
+  --base-secondary: #16395b;
+  --color-primary-dark: #16395b;
+  --base-accent: #d0415a;
+  --base-tertiary: #e29270;
+  --base-tertiary-light: #faece5;
+
+  --base-dark-500: #151617;
+  --base-dark-400: #202020;
+
+  --base-font: 'Inter-Regular';
+  --base-font-light: 'Inter-Light';
+  --base-font-medium: 'Inter-Medium';
+  --base-font-bold: 'Inter-Bold';
+
+  --color-primary: #faa916;
+  --color-black: #050517;
+  --color-white: #fff;
+
+  --body-bg-color: #f7f8fb;
+  --bg-color-black: #151617;
+  --bg-color-dark: #202020;
+
+  --big-bar-color: #147ad6;
+  --small-bar-color: #7388a95a;
+  --body-text-color: #16395b;
+
+  --box-shadow: #e6eaf27b;
+  --shadow-color: #e6eaf27b;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Inter-Regular', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.MuiPagination-root {
+  .MuiPagination-ul {
+    flex-wrap: nowrap;
+
+    li {
+      &:first-child {
+        //  flex-basis: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        > button > svg {
+          display: none;
+        }
+        > button::after {
+          margin-left: 10px;
+          content: 'Previous';
+        }
+      }
+      &:last-child {
+        //  flex-basis: 100%;
+        display: flex;
+        background-color: white;
+        justify-content: flex-end;
+        align-items: center;
+        > button > svg {
+          display: none;
+        }
+        > button::before {
+          margin-right: 10px;
+          content: 'Next';
+        }
+      }
+    }
+  }
+}
+
+.MuiFormHelperText-contained {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+fieldset.MuiOutlinedInput-notchedOutline-369 {
+  border-color: #dce0e3;
+}

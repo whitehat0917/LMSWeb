@@ -1,0 +1,49 @@
+@import 'app.scss';
+
+.leftContainer {
+  display: flex;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menuLink {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 0 10px;
+  color: $color-primary-dark;
+
+  a {
+    margin: 0 10px;
+    color: $color-primary-dark;
+    font-family: $base-font-bold;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background: url('/images/logo.svg');
+  width: 88.8px;
+  height: 28.08px;
+}
+.chevron {
+  color: white;
+}
+
+.input {
+  width: 290px;
+  height: 33px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid $base-gray-200;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 12px;
+}

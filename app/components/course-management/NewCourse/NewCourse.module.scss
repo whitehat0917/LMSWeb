@@ -1,0 +1,44 @@
+@import 'app.scss';
+
+.content {
+}
+
+.item {
+  justify-content: center;
+  display: flex;
+  margin-top: 9px !important;
+}
+
+.coloredButton {
+  background-color: $base-primary !important;
+  color: white !important;
+  width: 164px;
+  height: 36px;
+  white-space: nowrap;
+  text-transform: inherit !important;
+}
+
+.box {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  box-shadow: 0px 3px 6px $box-shadow;
+  padding: 20px;
+  align-items: center;
+  height: 100%;
+}
+.gridHeading {
+  color: $base-secondary;
+}
+.heading {
+  font-size: 22px;
+  justify-content: left;
+  display: flex;
+  margin-left: 0px;
+  margin-top: -30px;
+}
+@media (max-width: 600px) {
+  .box {
+    display: grid;
+  }
+}

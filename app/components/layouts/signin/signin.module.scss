@@ -1,0 +1,161 @@
+@import 'app.scss';
+
+.loginContainer {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  &__layoutRow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &:after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    &__layoutForm {
+      align-items: center;
+      display: flex;
+      float: left;
+      height: 800px;
+      justify-content: center;
+      padding: 10px;
+      width: 35%;
+
+      @media only screen and (max-width: 600px) {
+        height: 100%;
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    &__layoutFormSignUp {
+      align-items: center;
+      display: flex;
+      float: left;
+      height: 800px;
+      justify-content: center;
+      padding: 10px;
+      width: 60%;
+      overflow-y: scroll;
+
+      @media only screen and (max-width: 600px) {
+        height: 100%;
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    &__layoutColumn {
+      background-color: #7d8793;
+      background-image: url('https://lmsassets.blob.core.windows.net/imd-assets/assets/images/login.png');
+      height: 800px;
+      padding: 10px;
+      width: 65%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      float: left;
+
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    &__layoutColumnSignUp {
+      background-color: #7d8793;
+      background-image: url('/images/signup.jpg');
+      height: 800px;
+      padding: 10px;
+      width: 40%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      float: left;
+
+      @media only screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.mainContent {
+  padding: 40px 30px;
+  margin-bottom: auto;
+  height: 100%;
+  background-color: white;
+  border: none;
+  // max-width: 380px;
+  width: auto;
+  margin: 100px 0 0;
+
+  &__signIn {
+    max-width: 380px;
+  }
+
+  &__companyName {
+    font-size: 1.5em;
+    margin-bottom: 45px;
+  }
+
+  &__companyLogo {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: 50px;
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    display: none;
+  }
+
+  &__loginIntro {
+    h1 {
+      text-align: left;
+      font-family: $base-font;
+      font-size: 19px;
+      font-weight: 600;
+      font-variant: normal;
+      line-height: 17px;
+      letter-spacing: 0px;
+      color: #16395b;
+      margin-top: 59px;
+    }
+
+    p {
+      text-align: left;
+      font-family: $base-font;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0px;
+      color: #7d8793;
+      opacity: 1;
+      margin: 19px 0 35px;
+    }
+  }
+
+  &__form {
+    display: table;
+    margin: 30px 0 0;
+    width: 100%;
+    font-family: $base-font;
+  }
+}

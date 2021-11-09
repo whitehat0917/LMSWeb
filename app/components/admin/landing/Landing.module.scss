@@ -1,0 +1,107 @@
+@import 'app.scss';
+
+.root {
+  flex-grow: 1;
+  margin-top: 30px;
+}
+.landing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.accountText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.greeting {
+  text-align: left;
+  font: normal normal 300 22px/26px $base-font-light;
+  color: $color-primary-dark;
+  padding-bottom: 10px;
+}
+
+.message {
+  text-align: left;
+  font: normal normal normal 13px/16px $base-font;
+  letter-spacing: 0px;
+  color: $color-primary-dark;
+  opacity: 1;
+}
+
+.accountOptions {
+  padding-top: 20px;
+}
+
+.tutorialHeading {
+  text-align: left;
+  background-color: $base-gray-100;
+  font: normal normal 600 14px/17px $base-font-light;
+  color: $color-primary-dark;
+  opacity: 1;
+}
+
+.tutorialContainer {
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutQuestion {
+  text-align: left;
+  font: normal normal 600 13px/16px $base-font;
+  letter-spacing: 0px;
+  color: $color-primary-dark;
+  padding-bottom: 6px;
+  opacity: 1;
+}
+
+.tutText {
+  text-align: left;
+  font: normal normal normal 13px/16px $base-font-light;
+  letter-spacing: 0px;
+  color: $color-primary-dark;
+  opacity: 1;
+}
+
+.videoThumbnailCard {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+  .videoOverlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent
+      linear-gradient(1deg, $base-primary 0%, #80808000 100%) 0% 0% no-repeat
+      padding-box;
+    box-shadow: 0px 3px 6px #00000005;
+    border-radius: 5px;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  .videoTitle {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.tutorialContent {
+  align-items: center;
+}
